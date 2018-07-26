@@ -40,7 +40,7 @@ function total() {
     var cartTotal = [];
       cartTotal.push(cart[i].itemPrice);
   }
-  return cartTotal.sum;
+  return cartTotal;
 }
 
 
