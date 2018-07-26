@@ -40,10 +40,10 @@ var cartTotal = 0;
 var	prices = [];
 for (var i = 0; i < cart.length; i++) {
   prices.push(cart[i].itemPrice);
-}
 for (let i = 0; i < cart.length; i++) {
 	cartTotal += prices[i];
    return (cartTotal);
+}
 }
 }
 
