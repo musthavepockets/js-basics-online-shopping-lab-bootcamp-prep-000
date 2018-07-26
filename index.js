@@ -36,13 +36,15 @@ function viewCart() {
 
 
 function total() {
-cartTotal = 0;
-prices = [];
-  for (var i = 0; i < cart.length; i++) {
-    prices.push(cart[i].itemPrice);
-	  cartTotal += prices[i];
-    return (cartTotal);
+var cartTotal = 0;
+var	prices = [];
+for (var i = 0; i < cart.length; i++) {
+  prices.push(cart[i].itemPrice);
 }
+for (let i = 0; i < cart.length; i++) {
+	cartTotal += prices[i];
+}
+   return (cartTotal);
 }
 
 function removeFromCart(item) {
