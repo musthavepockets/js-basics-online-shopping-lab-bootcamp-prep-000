@@ -36,15 +36,14 @@ function viewCart() {
 
 
 function total() {
-  var amounts = []
+var amounts = [];
 for (var i = 0; i < cart.length; i++) {
-	var cartTotal = ''
+	var cartTotal = '';
   amounts.push(`${cart[i].itemPrice}`);
   cartTotal += `${amounts[i]}` + cartTotal;
-  }
-	return cartTotal;
+return cartTotal;
 }
-
+}
 
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
