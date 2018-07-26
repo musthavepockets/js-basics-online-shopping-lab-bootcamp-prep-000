@@ -39,10 +39,9 @@ function total() {
   for (var i = 0; i < cart.length; i++) {
     var cartTotal = []
     cartTotal.push(cart[i].itemPrice);
-  }
-    return cartTotal.sum;
+  return cartTotal.sum;
 }
-
+}
 
 function removeFromCart(item) {
   for (let i = 0; i <= cart.length; i++)
