@@ -36,6 +36,7 @@ function viewCart() {
 
 
 function total() {
+  getCart()
   for (var i = 0; i < cart.length; i++) {
     var cartTotal = []
     cartTotal.push(cart[i].itemPrice);
@@ -44,6 +45,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  getCart()
   for (let i = 0; i <= cart.length; i++) {
     if (`${cart[i].itemName}` == item) {
       cart.splice([i], 1);
