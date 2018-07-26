@@ -36,11 +36,13 @@ function viewCart() {
 
 
 function total() {
-  for (var i = 0; i < cart.length; i++) {
-    var cartTotal = [];
-      cartTotal.push(cart[i].itemPrice);
+  var amounts = []
+for (var i = 0; i < cart.length; i++) {
+	var cartTotal = ''
+  amounts.push(`${cart[i].itemPrice}`);
+  cartTotal += `${amounts[i]}` + cartTotal;
   }
-  return cartTotal;
+	return cartTotal;
 }
 
 
