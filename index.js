@@ -44,7 +44,7 @@ for (var i = 0; i < cart.length; i++) {
 for (let i = 0; i < cart.length; i++) {
 	cartTotal += prices[i];
 }
-   return (cartTotal);
+return (cartTotal);
 }
 
 function removeFromCart(item) {
