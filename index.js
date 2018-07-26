@@ -36,13 +36,13 @@ function viewCart() {
 
 
 function total() {
-  getCart()
   for (var i = 0; i < cart.length; i++) {
     var cartTotal = []
-    cartTotal.push(cart[i].itemPrice);
+      cartTotal.push(cart[i].itemPrice);
+  }
   return cartTotal.sum;
 }
-}
+
 
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
