@@ -40,7 +40,7 @@ function total() {
   for (var i = 0; i < cart.length; i++) {
 	cartTotal += parseInt(cart[i].itemPrice)
 }
-return cartTotal;
+    return cartTotal;
 }
 
 function removeFromCart(item) {
