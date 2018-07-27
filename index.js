@@ -35,7 +35,7 @@ function viewCart() {
   }
 
 
-function total() {
+function (total()) {
 var cartTotal = 0;
 var	prices = [];
 for (var i = 0; i < cart.length; i++) {
