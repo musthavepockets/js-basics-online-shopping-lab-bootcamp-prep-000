@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var p = Math.floor(Math.random() * 100 + 1);
   cart.push({itemName: item, itemPrice: p});
-  return `${item} has been added to your cart.`
+  return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
@@ -24,14 +24,14 @@ function viewCart() {
         cartOrder += `${cart[0].itemName} at $${cart[0].itemPrice}`;
       }
     if(cart.length >= 2) {
-      var items = ""
+      var items = "";
       for (let i = 1; i < cart.length - 1; i++) {
         items += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
-      cartOrder += `${items}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`
+      cartOrder += `${items}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
     }
     }
-    return `${cartOrder}.`
+    return `${cartOrder}.`;
   }
 
 
