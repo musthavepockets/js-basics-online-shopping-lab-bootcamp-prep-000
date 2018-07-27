@@ -59,6 +59,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
     if (cardNumber > 0) {
+      
     cart.shift();
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
     } else { 
